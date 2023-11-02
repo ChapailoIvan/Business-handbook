@@ -1,0 +1,34 @@
+INSERT INTO manufacture (id, name, country, email, website, zipCode, foundingDate, revenue) VALUES
+	(23982, 'PartMaster Inc.', 'USA', 'info@partmaster.com', 'www.partmaster.com', 12345, date('2000-01-15'), 5000000.00),
+	(48054, 'AutoTech Components', 'Canada', 'info@autotech.com', 'www.autotechcomponents.com', 54321, date('1995-03-22'), 7500000.50),
+	(78346, 'Precision Parts Solutions', 'UK', 'info@precisionpartssolutions.com', 'www.precisionpartssolutions.com', 67890, date('2010-12-10'), 10000000.75),
+	(35895, 'SpareMakers Co.', 'Germany', 'info@sparemakers.com', 'www.sparemakers.com', 98765, date('2005-07-05'), 8000000.25),
+	(81020, 'GearGurus Manufacturing', 'France', 'info@geargurus.com', 'www.geargurus.com', 45678, date('1998-09-14'), 6000000.75),
+	(57943, 'ProParts Innovators', 'Australia', 'info@proparts.com', 'www.proparts.com', 87654, date('2015-02-18'), 9000000.50),
+	(21378, 'Components Plus', 'China', 'info@componentsplus.com', 'www.componentsplus.com', 23456, date('2003-11-30'), 8500000.00),
+	(66472, 'FastFix Auto Parts', 'Japan', 'info@fastfix.com', 'www.fastfix.com', 76543, date('2008-06-25'), 7000000.25),
+	(69756, 'Reliable Parts Producers', 'Brazil', 'info@reliableparts.com', 'www.reliableparts.com', 34567, date('1990-04-08'), 9500000.75),
+	(92701, 'TechSpares International', 'South Korea', 'info@techspares.com', 'www.techspares.com', 65432, date('2018-08-12'), 11000000.00);
+	
+	
+INSERT INTO sparePart (id, manufactureId, description, productionDate, price) VALUES
+  (503798, 57943, 'Spark Plug', '2023-01-10', 5.99),
+  (257476, 35895, 'Brake Pad', '2023-02-15', 19.99),
+  (443175, 48054, 'Oil Filter', '2023-03-20', 7.49),
+  (778749, 92701, 'Air Filter', '2023-04-25', 8.99),
+  (184468, 78346, 'Tire', '2023-05-30', 49.99),
+  (731868, 48054, 'Battery', '2023-06-05', 59.99),
+  (621302, 92701, 'Alternator', '2023-07-10', 99.99),
+  (205289, 48054, 'Water Pump', '2023-08-15', 29.99),
+  (652818, 69756, 'Starter Motor', '2023-09-20', 39.99),
+  (304083, 66472, 'Radiator', '2023-10-25', 69.99),
+  (665297, 23982, 'Brake Rotor', '2023-11-01', 24.99),
+  (140943, 81020, 'Transmission Fluid', '2023-12-05', 12.99),
+  (450532, 57943, 'Wiper Blades', '2023-11-15', 9.99),
+  (168027, 69756, 'Cabin Air Filter', '2023-10-20', 11.99),
+  (579032, 48054, 'Shock Absorber', '2023-09-25', 34.99),
+  (784932, 78346, 'Headlight Bulb', '2023-08-30', 5.99),
+  (827785, 35895, 'Fuel Pump', '2023-07-10', 29.99),
+  (879228, 57943, 'Wheel Bearing', '2023-06-15', 15.99),
+  (752162, 66472, 'Serpentine Belt', '2023-05-20', 7.99),
+  (476250, 21378, 'Exhaust Pipe', '2023-04-25', 39.99);
