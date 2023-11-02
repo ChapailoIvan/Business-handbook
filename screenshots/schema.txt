@@ -1,0 +1,20 @@
+CREATE TABLE manufacture (
+	id INTEGER PRIMARY KEY NOT NULL,
+	name TEXT NOT NULL,
+	country TEXT NOT NULL,
+	email TEXT NOT NULL,
+	website TEXT NOT NULL,
+	zipCode INTEGER NOT NULL,
+	foundingDate TEXT NOT NULL,
+	revenue REAL
+);
+
+CREATE TABLE sparePart (
+	id INTEGER NOT NULL,
+	manufactureId INTEGER,
+	description TEXT NOT NULL,
+	productionDate TEXT NOT NULL,
+	price REAL NOT NULL,
+	PRIMARY KEY (id, manufactureId),
+	FOREIGN KEY (manufactureId) REFERENCES manufacture(id) ON DELETE SET NULL
+);
